@@ -13,20 +13,18 @@ import java.util.Date;
 public class Sach {
     private String maSach;
     private String tenSach;
-    private Date namXuatBan;
-    private boolean trangThai;
-    private String maLoaiSach;
+    private String namXuatBan;
+    private String maLoai;
     private String maTacGia;
 
     public Sach() {
     }
 
-    public Sach(String maSach, String tenSach, Date namXuatBan, boolean trangThai, String maLoaiSach, String maTacGia) {
+    public Sach(String maSach, String tenSach, String namXuatBan, String maLoai, String maTacGia) {
         this.maSach = maSach;
         this.tenSach = tenSach;
         this.namXuatBan = namXuatBan;
-        this.trangThai = trangThai;
-        this.maLoaiSach = maLoaiSach;
+        this.maLoai = maLoai;
         this.maTacGia = maTacGia;
     }
 
@@ -46,28 +44,20 @@ public class Sach {
         this.tenSach = tenSach;
     }
 
-    public Date getNamXuatBan() {
+    public String getNamXuatBan() {
         return namXuatBan;
     }
 
-    public void setNamXuatBan(Date namXuatBan) {
+    public void setNamXuatBan(String namXuatBan) {
         this.namXuatBan = namXuatBan;
     }
 
-    public boolean isTrangThai() {
-        return trangThai;
+    public String getMaLoai() {
+        return maLoai;
     }
 
-    public void setTrangThai(boolean trangThai) {
-        this.trangThai = trangThai;
-    }
-
-    public String getMaLoaiSach() {
-        return maLoaiSach;
-    }
-
-    public void setMaLoaiSach(String maLoaiSach) {
-        this.maLoaiSach = maLoaiSach;
+    public void setMaLoai(String maLoai) {
+        this.maLoai = maLoai;
     }
 
     public String getMaTacGia() {
@@ -77,5 +67,7 @@ public class Sach {
     public void setMaTacGia(String maTacGia) {
         this.maTacGia = maTacGia;
     }
+
+  
     
 }
